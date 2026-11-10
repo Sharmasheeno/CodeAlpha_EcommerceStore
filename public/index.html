@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopLite — Simple E-commerce Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Shop<span>Lite</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+      <span id="authLinks"></span>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Everyday products, honest prices</h1>
+    <p>Browse the catalogue, add to your cart, and check out in minutes.</p>
+  </section>
+
+  <main class="container">
+    <div class="toolbar">
+      <input id="searchInput" type="search" placeholder="Search products…">
+      <select id="categorySelect">
+        <option value="">All categories</option>
+      </select>
+    </div>
+    <p id="statusMsg" class="status-msg"></p>
+    <div id="productGrid" class="grid"></div>
+  </main>
+
+  <footer class="site-footer">ShopLite — CodeAlpha Full Stack Internship, Task 1: Simple E-commerce Store</footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — ShopLite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Shop<span>Lite</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+      <span id="authLinks"></span>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <form id="registerForm" class="form-card">
+      <h1>Create your account</h1>
+      <label>Full name
+        <input id="name" type="text" required autocomplete="name">
+      </label>
+      <label>Email
+        <input id="email" type="email" required autocomplete="email">
+      </label>
+      <label>Password (at least 6 characters)
+        <input id="password" type="password" required minlength="6" autocomplete="new-password">
+      </label>
+      <button class="btn" type="submit">Register</button>
+      <p id="formMsg" class="form-msg error"></p>
+      <p class="muted">Already registered? <a id="toLogin" href="login.html">Login</a></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">ShopLite — CodeAlpha Full Stack Internship, Task 1: Simple E-commerce Store</footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

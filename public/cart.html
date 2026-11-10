@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart — ShopLite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Shop<span>Lite</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+      <span id="authLinks"></span>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Your Cart</h1>
+    <div id="cartItems"></div>
+    <div id="cartSummary" class="summary"></div>
+
+    <form id="checkoutForm" class="form-card">
+      <h2>Checkout</h2>
+      <label>Delivery address
+        <input id="address" type="text" placeholder="e.g. Maka Al Mukarama Road, Mogadishu" required>
+      </label>
+      <label>Phone number
+        <input id="phone" type="tel" placeholder="e.g. +252 6XX XXX XXX" required>
+      </label>
+      <fieldset>
+        <legend>Payment method</legend>
+        <label class="radio"><input type="radio" name="pay" value="Cash on Delivery" checked> Cash on Delivery</label>
+        <label class="radio"><input type="radio" name="pay" value="Card"> Card (pay on delivery)</label>
+        <label class="radio"><input type="radio" name="pay" value="Mobile Money"> Mobile Money</label>
+      </fieldset>
+      <button class="btn" type="submit">Place Order</button>
+      <p id="checkoutMsg" class="form-msg"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">ShopLite — CodeAlpha Full Stack Internship, Task 1: Simple E-commerce Store</footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
